@@ -85,7 +85,7 @@ ul {
 }
 
 .logo {
-	padding-top: 178px;
+	padding-top: 17vh;
 }
 
 .about__inner {
@@ -189,6 +189,10 @@ ul {
 	color: #600e09;
 	left: 0;
 	top: -72px;
+}
+
+.seasons__item:nth-child(n + 10)::before {
+	content: counter(counter);
 }
 
 .seasons__item:hover::after {
@@ -316,3 +320,24 @@ ul {
 	margin-bottom: 15px;
 }
 /* End season 1*/
+
+/* Start media */
+
+@media (max-width: 1366px) {
+	.logo__img {
+		width: 50%;
+	}
+
+	.menu__list-link {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 640px) {
+	.menu__list {
+		display: none;
+	}
+}
+
+/* End media */
